@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOXICONS -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="asset/css/swiper-bundle.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/color/color-1.css">
+
+    <title>E-Commerce Website</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+
+        <nav class="nav container">
+            <a href="index.html" class="nav_logo">
+                 <i class="bx bxs-shopping-bags nav_logo-icon"></i> quickCart
+            </a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="index.html" class="nav_link active-link">Home</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="shop.html" class="nav_link ">Shop</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="about.html" class="nav_link ">About</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="blog.html" class="nav_link ">Blog</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="faq.html" class="nav_link ">Faq's</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="contact.html" class="nav_link ">Contact</a>
+                    </li>
+
+                </ul>
+                
+
+                <div class="nav_close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+            <div class="nav_btns">
+                <div class="login_toggle" id="login-button">
+                    <i class="bx bx-user"></i>
+                </div>
+
+                <div class="nav_shop" id="cart-shop">
+                    <i class="bx bx-shopping-bag"></i>
+                </div>
+
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- CART -->
+    <div class="cart" id="cart">
+        <i class="bx bx-x cart_close" id="cart-close"></i>
+
+        <h2 class="cart_title-center">My Cart</h2>
+
+        <div class="cart_container">
+            <article class="cart_card">
+                <div class="cart_box">
+                    <img src="asset/img/1.webp" alt="" class="cart_img">
+                </div>
+
+                <div class="cart_details">
+                    <h3 class="cart_title">Conway</h3>
+                    <span class="cart_price">₹200</span>
+
+                    <div class="cart_amount">
+                        <div class="cart_amount-content">
+                            <span class="cart_amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+
+                            <span class="cart_amount-number">1</span>
+
+                            <span class="cart_amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart_amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart_card">
+                <div class="cart_box">
+                    <img src="asset/img/2.webp" alt="" class="cart_img">
+                </div>
+
+                <div class="cart_details">
+                    <h3 class="cart_title">Force Men T-shirt </h3>
+                    <span class="cart_price">₹450</span>
+
+                    <div class="cart_amount">
+                        <div class="cart_amount-content">
+                            <span class="cart_amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+
+                            <span class="cart_amount-number">1</span>
+
+                            <span class="cart_amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart_amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart_card">
+                <div class="cart_box">
+                    <img src="asset/img/3.webp" alt="" class="cart_img">
+                </div>
+
+                <div class="cart_details">
+                    <h3 class="cart_title">EyeBogler Men T-shirt</h3>
+                    <span class="cart_price">₹350</span>
+
+                    <div class="cart_amount">
+                        <div class="cart_amount-content">
+                            <span class="cart_amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+
+                            <span class="cart_amount-number">1</span>
+
+                            <span class="cart_amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart_amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="cart_prices">
+            <span class="cart_prices-item">3 item</span>
+            <span class="cart_prices-total">₹1000</span>
+        </div>
+    </div>
+
+    <!-- LOGIN -->
+    <div class="login" id="login">
+        <i class="bx bx-x login_close" id="login_close"></i>
+
+        <h2 class="login_title-center">Login</h2>
+
+        <form action="" class="login_form grid">
+            <div class="login_content">
+                <label for="" class="login_label">Email</label>
+                <input type="email" class="login_input">
+            </div>
+
+            <div class="login_content">
+                <label for="" class="login_label">Password</label>
+                <input type="password" class="login_input">
+            </div>
+
+            <div>
+                <a href="#" class="button">Sign in</a>
+            </div>
+
+            <div>
+                <p class="signup">Not a member? <a href="registration.html">Sign up now</a></p>
+            </div>
+        </form>
+
+    </div>
+
+    <!-- MAIN -->
+    <main class="main">
+        <!-- home -->
+        <section class="home container">
+            <div class="swiper home-swiper">
+                <div class="swiper-wrapper">
+                    <!-- home swiper 1 -->
+                    <section class="swiper-slide">
+                        <div class="home_content grid">
+                            <div class="home_group">
+                                <img src="asset/img/4.jpg" alt="" class="home_img">
+                                <div class="home_indicator"></div>
+
+                                <div class="home_details-img">
+                                    <h4 class="home_details-title">The "Cardigan"</h4>
+                                    <span class="home_details-subtitle">Jacket</span>
+                                </div>
+                            </div>
+
+                            <div class="home_data">
+                                <h3 class="home_subtitle">#1 TRENDING ITEM</h3>
+                                <h1 class="home_title">ORIGINAL <br> IS NEVER <br> FINISHED!!</h1>
+                                <p class="home_description">This is a place of hope, meaning and purpose. Visit and
+                                    become a
+                                    part of something</p>
+
+                                <div class="home_buttons">
+                                    <a href="details.html" class="button">Buy Now</a>
+                                    <a href="details.html" class="button--link button--flex">View Details
+                                        <i class="bx bx-right-arrow-alt button_icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- home swiper 2 -->
+                    <section class="swiper-slide">
+                        <div class="home_content grid">
+                            <div class="home_group">
+                                <img src="asset/img/5.webp" alt="" class="home_img">
+                                <div class="home_indicator"></div>
+
+                                <div class="home_details-img">
+                                    <h4 class="home_details-title">"Madfrog"</h4>
+                                    <span class="home_details-subtitle">t-shirt</span>
+                                </div>
+                            </div>
+
+                            <div class="home_data">
+                                <h3 class="home_subtitle">#2 Top Best Item</h3>
+                                <h1 class="home_title">FALL <br> SUMMER <br> SALE!!</h1>
+                                <p class="home_description"> A specialist label creating luxury essentials.
+                                    Ethically crafted with an unwavering commitment to exceptional quality</p>
+                                </p>
+                                <div class="home_buttons">
+                                    <a href="details.html" class="button">Buy Now</a>
+                                    <a href="details.html" class="button--link button--flex">View Details
+                                        <i class="bx bx-right-arrow-alt button_icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- home swiper 3 -->
+                    <section class="swiper-slide">
+                        <div class="home_content grid">
+                            <div class="home_group">
+                                <img src="asset/img/6.webp" alt="" class="home_img">
+                                <div class="home_indicator"></div>
+
+                                <div class="home_details-img">
+                                    <h4 class="home_details-title">"Roxfid"</h4>
+                                    <span class="home_details-subtitle">JACKET</span>
+                                </div>
+                            </div>
+
+                            <div class="home_data">
+                                <h3 class="home_subtitle">#3 TRENDING ITEM</h3>
+                                <h1 class="home_title">SALE 20% <br> OFF ON <br> EVERYTHING</h1>
+                                <p class="home_description"> A specialist label creating luxury essentials.
+                                    Ethically crafted with an unwavering commitment to exceptional quality</p>
+                                </p>
+                                <div class="home_buttons">
+                                    <a href="details.html" class="button">Buy Now</a>
+                                    <a href="details.html" class="button--link button--flex">View Details
+                                        <i class="bx bx-right-arrow-alt button_icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- DISCOUNT -->
+        <section class="discount section">
+            <div class="discount_container container grid">
+                <img src="asset/img/7.png" alt="" class="discount_img">
+
+                <div class="discount_data">
+                    <h2 class="discount_title">50% Discount <br> On New Product</h2>
+                    <a href="#" class="button">Go to new</a>
+                </div>
+
+            </div>
+
+            <img src="asset/img/7.webp" alt="" class="discount_img">
+
+            </div>
+        </section>
+
+        <!-- New arrivals -->
+        <section class="new section">
+            <h2 class="section_title">New Arrivals</h2>
+
+            <div class="new_conatainer container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- New Content 1 -->
+                       <div class="new_content swiper-slide">
+                        <div class="new_tag">New</div>
+                        <img src="asset/img/8.webp" alt="" class="new_img">
+                        <h3 class="new_title">Lieo Trend Roundneck T-shirt</h3>
+                        <span class="new_subtitle">Accessory</span>
+
+                        <div class="new_prices">
+                            <span class="new_price">₹1,500</span>
+                            <span class="new_discount">₹3,000</span>
+                        </div>
+                        <a href="details1.html" class="button new_button">
+                            <i class="bx bx-cart-alt new_icon"></i>
+                        </a>
+                    </div>
+
+                        <!-- New Content 2 -->
+                        <div class="new_content swiper-slide">
+                            <div class="new_tag">New</div>
+                            <img src="asset/img/9.webp" alt="" class="new_img">
+                            <h3 class="new_title">ANITIKA Men Solid Casual Jacket</h3>
+                            <span class="new_subtitle">Accessory</span>
+
+                            <div class="new_prices">
+                                <span class="new_price">₹700</span>
+                                <span class="new_discount">₹1,400</span>
+                            </div>
+                            <a href="details2.html" class="button new_button">
+                                <i class="bx bx-cart-alt new_icon"></i>
+                            </a>
+
+                        </div>
+
+                        <!-- New Content 3 -->
+                        <div class="new_content swiper-slide">
+                            <div class="new_tag">New</div>
+                            <img src="asset/img/10.webp" alt="" class="new_img">
+                            <h3 class="new_title">Trippr Full Sleeve Men T-shirt</h3>
+                            <span class="new_subtitle">Accessory</span>
+
+                            <div class="new_prices">
+                                <span class="new_price">₹1,000</span>
+                                <span class="new_discount">₹2,000</span>
+                            </div>
+                            <a href="details3.html" class="button new_button">
+                                <i class="bx bx-cart-alt new_icon"></i>
+                            </a>
+                        </div>
+
+                        <!-- New Content 4 -->
+                        <div class="new_content swiper-slide">
+                            <div class="new_tag">New</div>
+                            <img src="asset/img/11.avif" alt="" class="new_img">
+                            <h3 class="new_title">Fleece Jackets Men Casual Jacket</h3>
+                            <span class="new_subtitle">Accessory</span>
+
+                            <div class="new_prices">
+                                <span class="new_price">₹2,600</span>
+                                <span class="new_discount">₹5,200</span>
+                            </div>
+                            <a href="details4.html" class="button new_button">
+                                <i class="bx bx-cart-alt new_icon"></i>
+                            </a>
+                        </div>
+
+                        <!-- New Content 5 -->
+                        <div class="new_content swiper-slide">
+                            <div class="new_tag">New</div>
+                            <img src="asset/img/12.webp" alt="" class="new_img">
+                            <h3 class="new_title">Men Solid Round Neck Cotton Blend</h3>
+                            <span class="new_subtitle">Accessory</span>
+
+                            <div class="new_prices">
+                                <span class="new_price">₹500</span>
+                                <span class="new_discount">₹1,000</span>
+                            </div>
+                            <a href="details5.html" class="button new_button">
+                                <i class="bx bx-cart-alt new_icon"></i>
+                            </a>
+                        </div>             
+                </div>
+            </div>
+        </section>
+
+        <!-- Steps -->
+        <div class="steps section container">
+            <div class="steps_bg">
+                <h2 class="section_title">How to order products <br> from QuickCart</h2>
+
+                <div class="steps_container grid">
+                    <!-- step card 1 -->
+                    <div class="steps_card">
+                        <div class="steps_card-number">01</div>
+                        <h3 class="steps_card-title">Choose Products</h3>
+                        <p class="steps_card-description">
+                            We have several varieties products you can choose from.
+                        </p>
+                    </div>
+
+                    <!-- step card 2 -->
+                    <div class="steps_card">
+                        <div class="steps_card-number">02</div>
+                        <h3 class="steps_card-title">Place an order</h3>
+                        <p class="steps_card-description">
+                            Once your order is set, wwe move to the next step which is the shipping.
+                        </p>
+                    </div>
+
+                    <!-- step card 3 -->
+                    <div class="steps_card">
+                        <div class="steps_card-number">03</div>
+                        <h3 class="steps_card-title">Get order delivered</h3>
+                        <p class="steps_card-description">
+                            Our delivery process is easy, you receive the order direct to your home.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Newsletter -->
+        <section class="newsletter section">
+            <div class="newsletter_container container">
+                <h2 class="section_title"> Our Newsletter</h2>
+                <p class="newsletter_description">
+                    Promotion new products and sales. Directly to your inbox.
+                </p>
+                <form action="" class="newsletter_form">
+                    <input type="text" placeholder="Enter your email" class="newsletter_input">
+                    <button class="button">Subscribe</button>
+                </form>
+
+        </section>
+    </main>
+
+    <!-- FOOTER  -->
+    <footer class="footer section">
+        <div class="footer footer_container container grid">
+            <!-- footer content 1 -->
+            <div class="footer_content">
+                <a href="#" class="footer_logo">
+                    <i class="bx bxs-shopping-bags footer_logo-icon"></i>quickCart
+                </a>
+
+                <p class="footer_description">Enjoy the biggest sale <br> of your life.</p>
+
+                <ul class="footer_social">
+                    <a href="#" class="footer_social-link"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="footer_social-link"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="#" class="footer_social-link"><i class="bx bxl-twitter"></i></a>
+                </ul>
+            </div>
+            <!-- footer content 2 -->
+            <div class="footer_content">
+                <h3 class="footer_title">About</h3>
+
+                <ul class="footer_links">
+                    <li><a href="./about.html" class="footer_link">About Us</a></li>
+                    
+                </ul>
+                
+            </div>
+
+            <!-- footer content 3 -->
+            <div class="footer_content">
+                <h3 class="footer_title">Our Services</h3>
+
+                <ul class="footer_links">
+                    <li><a href="./shop.html" class="footer_link">Shop</a></li>
+                   
+                </ul>
+            </div>
+
+            <!-- footer content 4 -->
+            <div class="footer_content">
+                <h3 class="footer_title">Contact Us</h3>
+                <ul class="footer_links">                    
+                    <li><a href="./contact.html" class="footer_link">Contact Us </a></li>                    
+                </ul>
+            </div>
+        </div>
+        <span class="footer_copy">@All rights reserved</span>
+    </footer>
+
+    <!-- scroll up -->
+     <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scrollup_icon"></i>
+     </a>
+
+    <!-- swiper js -->
+    <script src="asset/js/swiper-bundle.min.js"></script>
+
+    <!-- js -->
+    <script src="asset/js/main.js"></script>
+
+</body>
+</html>
